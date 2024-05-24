@@ -8,6 +8,6 @@ function solution(nums) {
     
     let pickedPoketmonCount = Object.keys(obj).length;
     
-    return Math.min(pickedPoketmonCount, maxPick);
+    return pickedPoketmonCount > maxPick ? maxPick : pickedPoketmonCount
  
 }
