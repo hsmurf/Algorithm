@@ -1,10 +1,13 @@
 function solution(nums) {
-    let answer = 0;
-    const select = nums.length/2;
-    const check = nums.reduce((total,cur) => {
-        total[cur] ? total[cur]++ : total[cur] = 1;
-        return total;
-    },{});
-    const checkLeng = Object.keys(check).length;
-    return checkLeng > select ? select : checkLeng;
+    const maxPick = nums.length/2
+    const hash = {}
+    
+    for (let p of nums) {
+        hash[p] === undefined ? hash[p] = 1 : hash[p]++
+    }
+    
+    const poketmonCount = Object.keys(hash).length;
+    
+    return poketmonCount > maxPick ? maxPick : poketmonCount
+ 
 }
