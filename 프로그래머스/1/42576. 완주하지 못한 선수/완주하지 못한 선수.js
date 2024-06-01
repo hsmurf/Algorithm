@@ -1,7 +1,7 @@
 function solution(participant, completion) {
     
     const hash = participant.reduce((acc, cur) => {
-      acc[cur] = acc[cur] ? ++acc[cur] : 1
+      acc[cur] = acc[cur] ? acc[cur] + 1 : 1
         return acc
 }, {});
     
