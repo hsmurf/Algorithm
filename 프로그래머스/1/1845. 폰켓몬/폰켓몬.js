@@ -6,8 +6,8 @@ function solution(nums) {
         hash[p] === undefined ? hash[p] = 1 : hash[p]++
     }
     
-    const ponketmonCount = Object.keys(hash).length;
+    const phoneketmonCount = Object.keys(hash).length;
     
-    return ponketmonCount > maxPick ? maxPick : ponketmonCount
+    return phoneketmonCount > maxPick ? maxPick : phoneketmonCount
  
 }
